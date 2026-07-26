@@ -8,14 +8,15 @@
 ul {
     list-style: none;
     padding: 0;
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 0px auto;
+
 }
 
 /* 每个列表项变成卡片 */
 li {
-    background: #f8f9fa;
-    margin: 10px 0;
+    background:#ffffff;
+    margin: 10px 0px;
     padding: 12px 18px;
     border-radius: 10px;
     border: 2px solid transparent;
@@ -24,10 +25,10 @@ li {
 
 /* 鼠标悬停时卡片浮起 */
 li:hover {
-    background: #ffffff;
-    border-color: #4A90D9;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(74, 144, 217, 0.25);
+    background:#87CEEB;
+    border-color: #87CEEB;
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 10px rgba(74, 144, 217, 0.45);
 }
 
 /* 链接样式 */
@@ -40,7 +41,8 @@ a {
 
 /* 悬停时链接文字变蓝 */
 li:hover a {
-    color: #4A90D9;
+    color:#ffffff;
+
 }
 
 /* 注释样式（灰色小字，不抢镜） */
@@ -48,6 +50,11 @@ li:hover a {
     color: #888;
     font-size: 13px;
     font-weight: normal;
+}
+
+/* 注释在卡片上浮时变白 */
+li:hover .note{
+color:#ffffff
 }
 
 /* 页面标题居中 */
