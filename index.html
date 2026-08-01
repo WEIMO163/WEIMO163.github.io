@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcom!</title>
+    <style>
+        .card li a{
+            display:flex;
+            align-items:center;   
+            flex-grow;
+            height:100%;
+            text-decoration:none;
+            color:inherit;
+            padding:0px 10px;
+            box-sizing:border-box;/* 锁定卡片宽度 */
+        }
+
+        /* 去掉列表默认圆点 */
+        ul {
+            list-style: none;
+            padding: 0px 0px;
+            max-width:100%;
+            margin: 0px 0px;
+        }
+
+        /* 每个列表项变成卡片 */
+        li {
+            background:#ffffff;
+            margin: 10px 0px;
+            padding: 0px 0px;  /* 减小内边距，避免影响点击区域 */
+            height:50px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        /* 鼠标悬停时卡片浮起 */
+        li:hover {
+            background:#87CEEB;
+            border-color: #87CEEB;
+            transform: translateY(-7px);
+            box-shadow: 0px 10px 10px rgba(74, 144, 217, 0.45);
+        }
+
+        /* 悬停时链接文字变白 */
+        li:hover a {
+            color:#ffffff;
+        }
+
+        /* 注释样式（灰色小字，不抢镜） */
+        .note {
+            color: #888;
+            font-size: 13px;
+            font-weight: normal;
+        }
+
+        /* 注释在卡片上浮时变白 */
+        li:hover .note{
+            color:#ffffff
+        }
+
+        /* 页面标题居中 */
+        h1, h2, p {
+            text-align: center;  <!-- 这里应该是 center -->
+        }
+
+        /* 副标题和分隔符说明稍微调淡一点 */
+        h2, p {
+            color: #555;
+            font-weight: normal;
+        }
+    </style> 
+</head>
+<body>
+    <h1>软件导航站</h1>
+    <h2>电脑使用此网站体验最好</h2>
+    <p>冒号是分隔符</p>
+    <div class="card">
+        <ul>
+            <li><a href="antivirus.html" target="_blank" class="card-link"><span>安全软件</span></a></li>
+            <li><a href="emulator.html" target="_blank" class="card-link"><span>模拟器</span></a></li>
+            <li><a href="AI.html" target="_blank" class="card-link"><span>AI</span></a></li>
+            <li><a href="office.html" target="_blank" class="card-link"><span>办公必备</span></a></li>
+        </ul>
+    </div>
+</body>
+</html>
