@@ -17,21 +17,27 @@
 
         /* 去掉列表默认圆点 */
         ul {
+            background:无;
             list-style: none;
             padding: 0px 0px;
-            max-width:100%;
+            max-width:40%;
             margin: 0px 0px;
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:10px 10px;
         }
 
         /* 每个列表项变成卡片 */
         li {
             background:#ffffff;
-            margin: 10px 0px;
+            margin: 0px 0px;
             padding: 0px 0px;  /* 减小内边距，避免影响点击区域 */
-            height:50px;
+            height:275px;
+            width:300px;
             border-radius: 10px;
             border: 2px solid transparent;
             transition: all 0.2s ease;
+            font-size:30px
         }
 
         /* 鼠标悬停时卡片浮起 */
@@ -41,7 +47,7 @@
             transform: translateY(-7px);
             box-shadow: 0px 10px 10px rgba(74, 144, 217, 0.45);
         }
-
+        
         /* 悬停时链接文字变白 */
         li:hover a {
             color:#ffffff;
@@ -61,7 +67,7 @@
 
         /* 页面标题居中 */
         h1, h2, p {
-            text-align: center;  <!-- 这里应该是 center -->
+            text-align:;  <!-- 这里应该是 center -->
         }
 
         /* 副标题和分隔符说明稍微调淡一点 */
@@ -81,6 +87,7 @@
             <li><a href="emulator.html" target="_blank" class="card-link"><span>模拟器</span></a></li>
             <li><a href="AI.html" target="_blank" class="card-link"><span>AI</span></a></li>
             <li><a href="office.html" target="_blank" class="card-link"><span>办公必备</span></a></li>
+            <li><a href="website.html" target="_blank" class="card-link"><span>实用网站</span></a></li>
         </ul>
     </div>
 </body>
